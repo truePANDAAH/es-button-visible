@@ -1,0 +1,31 @@
+body {
+	font-family: monospace;
+}
+
+#expand-toggle {
+	display: none;
+}
+
+.expandable {
+	visibility: collapse;
+	background: rgb(221, 57, 107);
+	color: white;
+}
+
+#expand-btn {
+	display: inline-block;
+	margin-top: 12px;
+	padding: 6px 12px;
+	background-color: #ff8888;
+	border: 1px solid;
+	border-radius: 3px;
+	transition: 0.3s;
+} 
+#expand-toggle:checked ~ * .expandable {
+	visibility: visible;
+}
+#expand-toggle:checked ~ #expand-btn {
+	background-color: #4933a7;
+	color: white;
+}
+
